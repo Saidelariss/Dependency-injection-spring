@@ -1,1 +1,2 @@
-# Java-JEE
+# Injection de dépendances
+L'idée en résumé est d'utiliser un framework tel que Spring pour déporter la responsabilité de la liaison des composants d'un programme. Cela permet de faciliter le processus de modification ou de remplacement des composants existants ainsi que de leur comportement, ce qui facilite la maintenance et l'évolution du logiciel. Cela permet également de séparer les différentes parties du programme pour une meilleure organisation et une maintenance plus efficace.
