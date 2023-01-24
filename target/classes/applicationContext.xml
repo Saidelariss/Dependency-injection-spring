@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+                          <!--injection des dépendances -->
+    <bean id="dao" class="extension.DaoImpl2"></bean> <!-- creer l'objet dao -->
+    <bean id="metier" class="Metier.IMetierImpl"><!-- creer l'objet metier-->
+       <!-- <property name="dao" ref="dao"></property>--> <!--utiliser la méthode setData()-->
+        <constructor-arg ref="dao"></constructor-arg><!-- utiliser le constructeur avec parametre -->
+    </bean>
+</beans>
